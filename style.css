@@ -281,6 +281,28 @@ nav ul li a:hover {
   margin-left: 3%;
 }
 
+/* About page */
+.circlePortrait {
+  width: 400px;
+  height: 400px;
+  background: url(https://i.postimg.cc/vT40FnDX/selfportrait-Circle.jpg);
+  border-radius: 40%;
+  float:left;
+  background-size: cover;
+  margin-left: 5%;
+  border: 3px solid white;
+  box-shadow: 0 0 10px white;
+}
+.aboutDetails {
+  position: relative;
+  color: white;
+  font-family: 'Manjari';
+  font-size: 30px;
+  padding: 5%;
+  padding-bottom: 8%;
+  padding-left: 30%;
+}
+
 /* Project details page */
 .projectHeader {
   text-align: center;

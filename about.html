@@ -15,6 +15,18 @@
         $('nav').removeClass('black');
       }
     })
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+          $('.scrollIndicator').fadeOut();
+        } else {
+          $('.scrollIndicator').fadeIn(2100);
+        }
+      });
+    });
+    $(document).ready(function() {
+      $('.scrollIndicator').delay(2100).fadeIn(400);
+    });
   </script>
 </head>
 
@@ -33,17 +45,23 @@
     <div id="drawAbout"></div>
   </section>
   <section class="bg">
-    <div class="projectDetails">
-      <div class="circlePortrait"></div>
-      Hey there, welcome to my portfolio.
-      My name is Jorrit Verstappen, I am 21 years old and live in the Netherlands.
+    <div class="circlePortrait"></div>
+    <div class="aboutDetails"> Hey there and welcome to my portfolio.<br>
+      My name is Jorrit Verstappen, I am 21 years old and live in the Netherlands.<br>
       I am currently studying ICT & Media Design at Fontys in Eindhoven.
-      I am experienced in using programms like Photoshop, Illustrator, After Effects and a few more.
-      The languages I am experienced with are HTML, CSS, Javascript and C#.
+      I am experienced in using programms like Photoshop, Illustrator, After Effects and a few more.<br>
+      The languages I am experienced with are HTML, CSS, Javascript and C#.<br>
       My ambition is to become a front-end developer and my interest goes to improving my current list of languages and
-      learning new ones.
-    </div>
+      learning new ones.</div>
   </section>
+
+  <!-- Scroll indicator -->
+  <div class="scrollIndicator">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
   <script>
     // Drawing "Portfolio" with vara library
     var vara = new Vara("#drawAbout", "https://cdn.jsdelivr.net/gh/akzhy/vara/fonts/Pacifico/PacificoSLO.json", [{
