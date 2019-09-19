@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+  <title>About</title>
+  <link rel="stylesheet" types="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/gh/akzhy/vara@master/src/vara.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      } else {
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h4>About</h4>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+  </nav>
+  <section class="bg sec1">
+    <div id="drawAbout"></div>
+  </section>
+  <section class="bg">
+    <div class="projectDetails">
+      <div class="circlePortrait"></div>
+      Hey there, welcome to my portfolio.
+      My name is Jorrit Verstappen, I am 21 years old and live in the Netherlands.
+      I am currently studying ICT & Media Design at Fontys in Eindhoven.
+      I am experienced in using programms like Photoshop, Illustrator, After Effects and a few more.
+      The languages I am experienced with are HTML, CSS, Javascript and C#.
+      My ambition is to become a front-end developer and my interest goes to improving my current list of languages and
+      learning new ones.
+    </div>
+  </section>
+  <script>
+    // Drawing "Portfolio" with vara library
+    var vara = new Vara("#drawAbout", "https://cdn.jsdelivr.net/gh/akzhy/vara/fonts/Pacifico/PacificoSLO.json", [{
+      text: "About",
+      strokeWidth: 2,
+      y: 300,
+      x: 7,
+      color: "black"
+    }, {
+      text: "About",
+      strokeWidth: 2,
+      y: -566,
+      color: "white",
+      queued: false
+    }], {
+      fontSize: 150,
+      textAlign: "center"
+    });
+  </script>
+</body></html>

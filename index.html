@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+  <title>Home</title>
+  <link rel="stylesheet" types="text/css" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png"/>
+  <script src="https://cdn.jsdelivr.net/gh/akzhy/vara@master/src/vara.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      } else {
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h4>Portfolio</h4>
+    </div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <section class="bg sec1">
+    <div id="drawHome"></div>
+  </section>
+
+  <script>
+    // Drawing "Portfolio" with vara library
+    var vara = new Vara("#drawHome", "https://cdn.jsdelivr.net/gh/akzhy/vara/fonts/Pacifico/PacificoSLO.json", [{
+      text: "Portfolio",
+      strokeWidth: 2,
+      y: 280,
+      x: 7,
+      color: "black"
+    }, {
+      text: "Portfolio",
+      strokeWidth: 2,
+      y: -565,
+      queued: false,
+      color: "white"
+    }, {
+      text: "Jorrit Verstappen",
+      fontSize: 80,
+      textAlign: "right",
+      strokeWidth: 1,
+      x: -100,
+      y: -180,
+      color: "black",
+      queued:false
+    }, {
+      text: "Jorrit Verstappen",
+      fontSize: 80,
+      textAlign: "right",
+      strokeWidth: 1,
+      x: -105,
+      y: -293,
+      color: "white",
+      queued: false
+    }], {
+      fontSize: 150,
+      textAlign: "center"
+    });
+
+  </script>
+</body>
+
+</html>
