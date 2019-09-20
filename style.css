@@ -126,6 +126,32 @@ nav ul li a:hover {
 .responsive-bar {
   display: none;
 }
+nav ul li ul {
+  display: block;
+  background: rgba(0,0,0,0.5);
+  width: 210px;
+  height: 268px;
+  position: absolute;
+  margin-top: -15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  border-radius: 10%;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+  transform: translateY(-40px);
+  text-align: center;
+  transform: translateX(-38px);
+}
+nav ul li:hover ul  {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transform: translateX(-38px);
+}
+nav ul li ul li  {
+  margin-bottom: -37px;
+  margin-top: -10px;
+}
 
 /* Cards on project page */
 .projects {
@@ -289,7 +315,7 @@ nav ul li a:hover {
   border-radius: 40%;
   float:left;
   background-size: cover;
-  margin-left: 5%;
+  margin-left: 6%;
   border: 3px solid white;
   box-shadow: 0 0 10px white;
 }
@@ -300,7 +326,7 @@ nav ul li a:hover {
   font-size: 30px;
   padding: 5%;
   padding-bottom: 8%;
-  padding-left: 30%;
+  padding-left: 33%;
 }
 
 /* Project details page */
