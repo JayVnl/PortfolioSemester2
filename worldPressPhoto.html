@@ -3,10 +3,9 @@
 
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
-  <title>User Research</title>
+  <title>World Press Photo Exhibition</title>
   <link rel="stylesheet" types="text/css" href="style.css">
-  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png"/>
-  <script src="https://cdn.jsdelivr.net/gh/akzhy/vara@master/src/vara.min.js" type="text/javascript"></script>
+  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script>
     $(window).on('scroll', function() {
@@ -41,13 +40,13 @@
 <body>
   <nav>
     <div class="logo">
-      <h4>User Research</h4>
+      <h4>World Press Photo</h4>
     </div>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="#" class="active">Subjects</a>
+      <li><a href="#">Subjects</a>
         <ul>
-          <li><a href="userResearch.html" class="active">User Research</a></li>
+          <li><a href="userResearch.html">User Research</a></li>
           <li><a href="development.html">Development</a></li>
           <li><a href="prototyping.html">Prototyping</a></li>
           <li><a href="concepting.html">Concepting</a></li>
@@ -58,56 +57,20 @@
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
-  <section class="bg sec1">
-    <div id="draw"></div>
+  <section class="bg">
+    <div class="projectHeader">World Press Photo
+      <hr>
+    </div>
+    <div class="projectTitle">
+      Glass Butterfly
+    </div>
+    <p style="text-align: center; width: 33%; float: right; color: white; font-size: 30px; margin-right: 2%;">This picture shows a winged comb jelly also known as Leucothea multicornis. <br>In this picture you can see the jelly with its wings spread open which you don't see too often in photographs since these creatures are very fragile and will fold their wings to the slightest vibration. <br><br>
+      The name of the picture 'Glass Butterfly' most likely comes from the fact that it's a fragile creature just like glass is fragile and has wings like a butterfly.<br><br>
+      The depth of field isn't really shallow or large since only the jelly gets put in the composition against the darkness of the ocean.<br><br>
+      The picture is exposed to a lot of light to capture all the light the jelly radiates in the dark. The aperture was most likely very large to let in a big amount of light.<br></p>
+    <img src="https://i.postimg.cc/8cz9T6c2/WPPF-2019-Photo-Contest-Angel-Fitor.jpg">
   </section>
-
-  <!-- All projects displayed on card linking to their own page -->
-
-  <!-- Scroll indicator -->
-  <div class="scrollIndicator">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <!-- Button to scroll back to the top -->
-  <a href="#" class="scrollToTop">⮝</a>
-
   <script>
-    // Drawing "Projects" with vara library
-    var vara = new Vara("#draw", "https://cdn.jsdelivr.net/gh/akzhy/vara/fonts/Pacifico/PacificoSLO.json", [{
-      text: "User",
-      strokeWidth: 2,
-      y: 230,
-      x: 7,
-      color: "black"
-    }, {
-      text: "User",
-      strokeWidth: 2,
-      y: -565,
-      x: 0,
-      queued: false,
-      color: "white"
-    }, {
-      text: "Research",
-      textAlign: "right",
-      strokeWidth: 2,
-      x: -450,
-      y: -300,
-      color: "black",
-      queued: false
-    }, {
-      text: "Research",
-      textAlign: "right",
-      strokeWidth: 2,
-      x: -457,
-      y: -565,
-      color: "white",
-      queued: false
-    }], {
-      fontSize: 150,
-      textAlign: "center"
-    });
+    initComparisons()
   </script>
 </body></html>

@@ -132,7 +132,7 @@ nav ul li ul {
   width: 210px;
   height: 268px;
   position: absolute;
-  margin-top: -15px;
+  margin-top: -22px;
   opacity: 0;
   visibility: hidden;
   transition: .5s;
@@ -141,7 +141,8 @@ nav ul li ul {
   transform: translateX(-38px);
 }
 nav.black ul li ul {
-  margin-top: 13px;
+  margin-top: 6px;
+  background: rgba(0,0,0,.8);
 }
 nav ul li:hover ul  {
   opacity: 1;
@@ -195,8 +196,8 @@ nav.black ul li ul li {
   bottom:80px;
 }
 .card:hover {
-  box-shadow: 0px 0px 35px #CE0E2D;
-  transform: scale(1.05);
+  box-shadow: 0px 0px 35px #000;
+  transform: scale(1.08);
   transition: .5s;
 }
 .card .imgBx img {
@@ -226,7 +227,7 @@ nav.black ul li ul li {
 .card .details h2 span {
   font-weight: 500;
   font-size: 20px;
-  color: #f38695;
+  color: #CE0E2D;
   display: block;
 }
 
