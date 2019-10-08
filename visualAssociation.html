@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+  <title>Visual Associations</title>
+  <link rel="stylesheet" types="text/css" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      } else {
+        $('nav').removeClass('black');
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h4>Visual Associations</h4>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Subjects</a>
+        <ul>
+          <li><a href="userResearch.html">User Research</a></li>
+          <li><a href="development.html">Development</a></li>
+          <li><a href="prototyping.html">Prototyping</a></li>
+          <li><a href="concepting.html">Concepting</a></li>
+          <li><a href="strategy.html">Strategy</a></li>
+          <li><a href="aisha.html">Aisha</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <section class="bg">
+    <div class="projectHeader">
+      <span>Visual Associations</span>
+      <hr>
+    </div>
+    
+    <div class="projectTitle">
+      <span>1.</span>
+    </div>
+    <div class="vaImg">
+      <img src="https://i.postimg.cc/FKkgM8tT/Whale1.png">
+      <img src="https://i.postimg.cc/Fz0WJxjV/whale2.jpg">
+      <span>Here you see a picture of a futuristic submarine. <br>
+            These 2 pictures associate with each other since they have the same kind of shape.</span>
+      <hr>
+    </div>
+    
+    <div class="projectSubtitle">
+      <span>2.</span>
+    </div>
+    <div class="vaImg">
+
+      <hr>
+    </div>
+    
+  </section>
+  <script>
+    initComparisons()
+  </script>
+</body></html>
