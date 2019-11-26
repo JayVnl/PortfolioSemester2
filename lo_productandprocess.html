@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <title>Product & Process</title>
+    <link rel="stylesheet" types="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollToTop').fadeIn();
+                    $('.scrollIndicator').fadeOut();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                    $('.scrollIndicator').fadeIn(2100);
+                }
+            });
+            $('.scrollToTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000)
+            })
+        });
+        $(document).ready(function() {
+            $('.scrollIndicator').delay(2100).fadeIn(400);
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Product & Process</h4>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
+            <li><a href="#">Subjects</a>
+                <ul>
+                    <li><a href="userResearch.html">User Research</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="concepting.html">Concepting</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="aisha.html">Aisha</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section class="bg">
+        <div class="exercise-block">
+            <div class="projectHeader"><span>Product & Process</span>
+                <hr class="smaller-hr">
+                <h6>EZ-Dice</h6>
+                <div class="box-dice">
+                    <p>
+                        My first project of development was a chrome extension called EZ-Dice which is basically a dice roller.<br>
+                        
+                        The first thing i did before actually programming was watching some tutorials and do some research about how chrome extensions work and how to make one.<br>
+                    </p>
+                    <div class="box-demographic">
+                        <p>After understanding the roots of it i started making my own chrome extension. <br>
+                        I had a general idea about how i should make it and it also went quite easy. I have some experience in javascript and this programm didn't need that much since it basically only needed a random number generator that spits out a number that links to an image of a side of the dice and shows it to the user.</p><br><br>
+
+                        <img class="img-dev-code" src="images/dev_dice_code.PNG"><br><br>
+
+                    </div>
+                    <p>
+                        I designed each side of the dice myself in Photoshop and made a gif out of it that goes through each side twice, i made this so it looks like the dice is actually rolling/changing. This makes it also a little bit more fun to look at instead of just an image of dice that pops up.
+                    </p>
+                    <div class="img-dice-examples">
+                        <img src="images/dev_dice1.png">
+                        <img src="images/dev_dice2.png">
+                        <img src="images/dev_dice3.png">
+                        <img src="images/dev_dice4.png">
+                        <img src="images/dev_dice5.png">
+                        <img src="images/dev_dice6.png">
+                        <img src="images/dev_diceroll.gif">
+                    </div>
+                </div>
+
+                <h6>Swiss Toolbox</h6>
+                <div>
+                    <p>
+                        My next project is called Swiss Toolbox, it's another chrome extension that is as it's name says a toolbox. Which basically means it has different types of tools once you open it.<br><br>
+
+                        I started off by thinking of what kind of tools i would like to have inside the toolbox and i instantly thought it would be kinda cool to make a chrome extension that is actually useful and i could use myself as well.<br>
+                        <br>
+
+                        The first tool i thought of was a colourpicker which let's me easily pick colours that i like and puts the hex code of it into a textfield for me to copy.<br>
+
+                        The next item on my list was to try and implement my previous project (The EZ-Dice), i wanted to see if i would be able to add an already existing programm/chrome extension into my toolbox and it did work quite nicely.<br>
+
+                        For the next tool i asked some of my group members and my teacher and got the suggestion to add a tool that let's the user click on any image on any website and then make it fullscreen. This was quite a challenge and i didn't get it working myself but i did get it working with the help of someone else's code. I didn't want to just copy/paste the code without knowing what it means so i went through it several times to see in what order it works and understand how it works now.<br><br>
+
+                        From making this chrome extension i have learned that i can make every chrome extension i want and even add multiple chrome extensions into one, what makes it quite interesting for me and will make me definitely go back to this sometime to just experiment further.
+                    </p>
+                    <img class="img-toolbox" src="images/dev_toolbox_ui.png">
+
+                </div>
+
+                <h6>Failstack Chance</h6>
+                <img class="img-failstack-ps" src="images/dev_failstack_ps.png">
+                <img class="img-failstack-web" src="images/dev_failstack_web.png">
+                <p>
+                    Failstack Chance is my latest project and the one i am most excited about because so far i had a lot of fun designing and coding it.<br><br>
+
+                    This programm is a tool that shows the calculation of a specified action inside a game that i play (Black Desert Online). So far i have completed the design which you can see in the first image. I have also already made the design in HTML and CSS which you can see at the second image.<br>
+
+                    The parts where i am currently still working on and optimising is the calculation which will become a long algorithm in javascript using all the variables the user can enter, so what the item type is, the grade of the item, what level the item is and how many failstacks are going to be used.<br>
+
+                    After the calculation is done this value will be presented in the form of a percentage in the 3rd box.
+
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Button to scroll back to the top -->
+    <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
+
+</body></html>

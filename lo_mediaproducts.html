@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <title>Media Products</title>
+    <link rel="stylesheet" types="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollToTop').fadeIn();
+                    $('.scrollIndicator').fadeOut();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                    $('.scrollIndicator').fadeIn(2100);
+                }
+            });
+            $('.scrollToTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000)
+            })
+        });
+        $(document).ready(function() {
+            $('.scrollIndicator').delay(2100).fadeIn(400);
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Media Products</h4>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
+            <li><a href="#">Subjects</a>
+                <ul>
+                    <li><a href="userResearch.html">User Research</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="concepting.html">Concepting</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="aisha.html">Aisha</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section class="bg">
+        <div class="exercise-block">
+            <div class="projectHeader"><span>Media Products</span>
+                <hr class="smaller-hr">
+                <h6>Logo Design</h6>
+                <div class="box-logo">
+                    <p>
+                        My group member Jordy and me both made a logo for Aisha.<br> After doing some brand tests on our logo's to Aisha's target audience and input from Aisha herself we both made iterations and ended up with a final result.<br><br>
+
+                        I learned from this experience that it's always useful and necessary to ask for as much feedback possible and make iterations according to that.
+                    </p>
+                    <div>
+                        <img class="img-logo" src="images/logo_aisha_iteration1.png">
+                        <img class="img-logo" src="images/logo_aisha_iteration2.png">
+                        <img class="img-logo" src="images/logo_aisha_iteration3.png">
+                        <img class="img-logo" src="images/logo_aisha.png">
+                    </div>
+                </div>
+
+                <h6>Album Cover</h6>
+                <div class="box-album-covers">
+                    <div>
+                        <img class="img-covers" src="images/album-cover-cloud1.png">
+                        <img class="img-covers" src="images/album-cover-cloud2.png">
+                        <img class="img-covers" src="images/album-cover-cloud3.png">
+                        <img class="img-covers" src="images/album-cover-cloud4.png">
+                    </div>
+                    <p>
+                        Each member of our group has made an album cover for Aisha, the ones with the red border are made by me.<br>
+                        The first album cover i made is the one on the bottom left, i thought it looked cool, interesting and a little bit flashy that would attract the attention of her target audience. The next one i made is more of an iteration on the previous one where i changed the triangles into circles for a more curvy feel.<br><br>
+
+                        The 3rd cover i made was a new concept and i also approached this design differently, i started off by listening to Aisha's "Zeg mij" song again and visualizing images that i thought about while listening.<br>
+                        Immediately while listening i thought about a girl laying down in the clouds thinking about love.<br><br>
+
+                        Here you can see the different iterations i made for this album cover.
+                    </p>
+                    <div>
+                        <img class="img-covers" src="images/album-cover-sem.png">
+                        <img class="img-covers" src="images/album-cover-will.png">
+                        <img class="img-covers img-cover-mine" src="images/album-cover-jorrit.png">
+                        <img class="img-covers" src="images/album-cover-jordy.png">
+                        <img class="img-covers" src="images/album-cover-simon.png">
+                        <img class="img-covers img-cover-mine" src="images/album-cover-jorrit2.png">
+                        <img class="img-covers" src="images/album-cover-will2.png">
+                        <img class="img-covers img-cover-mine" src="images/album-cover-jorrit3.png">
+                    </div>
+                </div>
+                
+                <!--
+                <h6>Business Cards</h6>
+                <div class="box-business-cards">
+                    <img class="img-business-card" src="images/businesscard_will.png">
+                    <img class="img-business-card" src="images/businesscard_jordy.png">
+                    <img class="img-business-card" src="images/businesscard_jorrit.png">
+                </div>-->
+
+                <h6>Hologram Videos</h6>
+                <div class="box-hologram-videos">
+                    <img class="img-hologram" src="images/hologram_3dturn.gif">
+                    <img class="img-hologram" src="images/hologram_liquid.gif">
+                    <img class="img-hologram" src="images/hologram_cube.gif">
+                    <img class="img-hologram" src="images/hologram_cloud.gif">
+                </div>
+                <p>
+                    During the sprints i have already made some videos that could be used as a hologram with our prisma.<br>
+                    The first 2 are pretty basic showing Aisha's logo in a fancy way, the 3rd one is a cube showing some of the album covers we made and the last one is my last album cover visualized into an animation through after effects.<br><br>
+
+                    By making these videos i got more experience in using after effects and video editing programms like camtasia.<br><br>
+
+
+                    Also through making the previous hologram videos i have got a little handy in making any video into a video our prisma can use which is useful for the next sprint.<br>
+                    In the next sprint we are gonna focus more on making holograms that fit more to Aisha's style.<br>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Button to scroll back to the top -->
+    <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
+
+</body></html>

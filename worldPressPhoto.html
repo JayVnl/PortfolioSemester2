@@ -2,81 +2,88 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
-  <title>World Press Photo Exhibition</title>
-  <link rel="stylesheet" types="text/css" href="style.css">
-  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script>
-    $(window).on('scroll', function() {
-      if ($(window).scrollTop()) {
-        $('nav').addClass('black');
-      } else {
-        $('nav').removeClass('black');
-      }
-    });
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-          $('.scrollToTop').fadeIn();
-          $('.scrollIndicator').fadeOut();
-        } else {
-          $('.scrollToTop').fadeOut();
-          $('.scrollIndicator').fadeIn(2100);
-        }
-      });
-      $('.scrollToTop').click(function() {
-        $('html,body').animate({
-          scrollTop: 0
-        }, 1000)
-      })
-    });
-    $(document).ready(function() {
-      $('.scrollIndicator').delay(2100).fadeIn(400);
-    });
-  </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <title>World Press Photo</title>
+    <link rel="stylesheet" types="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollToTop').fadeIn();
+                    $('.scrollIndicator').fadeOut();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                    $('.scrollIndicator').fadeIn(2100);
+                }
+            });
+            $('.scrollToTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000)
+            })
+        });
+        $(document).ready(function() {
+            $('.scrollIndicator').delay(2100).fadeIn(400);
+        });
+    </script>
 </head>
 
 <body>
-  <nav>
-    <div class="logo">
-      <h4>World Press Photo</h4>
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Subjects</a>
+    <nav>
+        <div class="logo">
+            <h4>World Press Photo</h4>
+        </div>
         <ul>
-          <li><a href="userResearch.html">User Research</a></li>
-          <li><a href="development.html">Development</a></li>
-          <li><a href="prototyping.html">Prototyping</a></li>
-          <li><a href="concepting.html">Concepting</a></li>
-          <li><a href="strategy.html">Strategy</a></li>
-          <li><a href="aisha.html">Aisha</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
+            <li><a href="#">Subjects</a>
+                <ul>
+                    <li><a href="userResearch.html">User Research</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="concepting.html">Concepting</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="aisha.html">Aisha</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
         </ul>
-      </li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-  <section class="bg">
-    <div class="projectHeader">World Press Photo
-      <hr>
-    </div>
-    <div class="projectTitle">
-      Glass Butterfly
-    </div>
-    <p class="worldpress">This picture shows a winged comb jelly also known as Leucothea multicornis. <br>In this picture you can see the jelly with its wings spread open which you don't see too often in photographs since these creatures are very fragile and will fold their wings to the slightest vibration. <br><br>
-      The name of the picture 'Glass Butterfly' most likely comes from the fact that it's a fragile creature.<br><br>
-      The depth of field isn't really shallow or large since only the jelly gets put in the composition against the darkness of the ocean.<br><br>
-      The picture is exposed to a lot of light to capture all the light the jelly radiates in the dark. The aperture was most likely very large to let in a big amount of light.<br></p>
-    <img class="worldpressImg" src="https://i.postimg.cc/8cz9T6c2/WPPF-2019-Photo-Contest-Angel-Fitor.jpg">
-    <hr style="margin-top: -2%;">
-    <div class="projectDetails">
-      <div class="projectTitle" style="margin-top: -5%;">Reflection</div>
-      <span>Out of all the pictures of the World Press Photo Exhibition, this one is my favourite.<br> This picture stood out the most to me because of the bright blue color.<br> It gives a nice contrast of bright blue against the darkness of the ocean.
-      </span>
-    </div>
-  </section>
-  <script>
-    initComparisons()
-  </script>
+    </nav>
+    <section class="bg">
+        <div class="exercise-block">
+            <div class="projectHeader"><span>World Press Photo</span>
+                <hr class="larger-hr smaller-hr">
+                <div class="box-logo">
+                    <p>
+                        This picture shows a winged comb jelly also known as Leucothea multicornis. <br>In this picture you can see the jelly with its wings spread open which you don't see too often in photographs since these creatures are very fragile and will fold their wings to the slightest vibration. <br><br>
+
+                        The name of the picture 'Glass Butterfly' most likely comes from the fact that it's a fragile creature.<br><br>
+
+                        The depth of field isn't really shallow or large since only the jelly gets put in the composition against the darkness of the ocean.<br><br>
+
+                        The picture is exposed to a lot of light to capture all the light the jelly radiates in the dark. The aperture was most likely very large to let in a big amount of light.<br><br>
+                        
+                        Out of all the pictures of the World Press Photo Exhibition, this one is my favourite. This picture stood out the most to me because of the bright blue color. It gives a nice contrast of bright blue against the darkness of the ocean.
+                    </p>
+                        <img class="img-worldpress" src="images/worldpressphoto.jpg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Button to scroll back to the top -->
+    <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
+
 </body></html>
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+  <title>Physical Prototype</title>
+  <link rel="stylesheet" types="text/css" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <script>
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      } else {
+        $('nav').removeClass('black');
+      }
+    });
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+          $('.scrollToTop').fadeIn();
+          $('.scrollIndicator').fadeOut();
+        } else {
+          $('.scrollToTop').fadeOut();
+          $('.scrollIndicator').fadeIn(2100);
+        }
+      });
+      $('.scrollToTop').click(function() {
+        $('html,body').animate({
+          scrollTop: 0
+        }, 1000)
+      })
+    });
+    $(document).ready(function() {
+      $('.scrollIndicator').delay(2100).fadeIn(400);
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h4>Physical Prototype</h4>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
+      <li><a href="#">Subjects</a>
+        <ul>
+          <li><a href="userResearch.html">User Research</a></li>
+          <li><a href="development.html">Development</a></li>
+          <li><a href="prototyping.html">Prototyping</a></li>
+          <li><a href="concepting.html">Concepting</a></li>
+          <li><a href="strategy.html">Strategy</a></li>
+          <li><a href="aisha.html">Aisha</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <section class="bg">
+    <div class="exercise-block">
+      <div class="projectHeader"><span>Physical Prototype</span>
+        <hr class="larger-hr normal-hr">
+        <div>
+          <img class="img-prisma1" src="images/prototyping_prisma1.jpg">
+          <img class="img-prisma1" src="images/prototyping_prisma2.jpg">
+          <p>
+            For my prototyping assignment i am making the prisms that are used for prism holograms. Our group also needs these for our project since we are making holograms for our client.<br>
+            There will be most likely 3 different prisms i have made at the end of this semester, 2 of these i have already made and are shown in the pictures above.
+            The next iteration will be made during this week or next week.<br><br>
+            
+            The first image is my first try of making a prism out of plastic, i had a plastic packaging left from a door lock and cut it in the pieces i needed for making a prism. The plastic was quite flexible, lightweight and easy to cut.<br>
+            I then tested it with a few users to see what they thought about it when trying to use it for a hologram.<br>
+            They said that it was sturdy, easy to use but the plastic was not completely see through which made the holograms not look as good as they could be.<br><br>
+            
+            The second image is my first iteration which is the same dimensions as the previous prism but with a different material and a different way of applying the tape to hold it together.<br>
+            This prism is made out of the plastic of a cd case, this made the prism a lot harder to make since it took me quite a long time cutting out all the pieces with a stanley knife compared to the other prism. The benefit of this prism compared to the other one is that the plastic is a lot clearer and so makes the holograms come out better.<br>
+            I also tested this prism with a few users and they thought as well that the clearer plastic is a lot better for the holograms but there were also some issues, the main issue was that the plastic tape that i applied on this prism differently from the rest, made it harder to keep it in shape on their mobile phone since it was not as sturdy as the previous one. This issue can be easily fixed by changing the way i applied the tape. Tape on the outside instead of the inside.
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Button to scroll back to the top -->
+  <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
+
+</body></html>

@@ -2,130 +2,168 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
-  <title>Concepting</title>
-  <link rel="stylesheet" types="text/css" href="style.css">
-  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
-  <script src="https://cdn.jsdelivr.net/gh/akzhy/vara@master/src/vara.min.js" type="text/javascript"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script>
-    $(window).on('scroll', function() {
-      if ($(window).scrollTop()) {
-        $('nav').addClass('black');
-      } else {
-        $('nav').removeClass('black');
-      }
-    });
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-          $('.scrollToTop').fadeIn();
-          $('.scrollIndicator').fadeOut();
-        } else {
-          $('.scrollToTop').fadeOut();
-          $('.scrollIndicator').fadeIn(2100);
-        }
-      });
-      $('.scrollToTop').click(function() {
-        $('html,body').animate({
-          scrollTop: 0
-        }, 1000)
-      })
-    });
-    $(document).ready(function() {
-      $('.scrollIndicator').delay(2100).fadeIn(400);
-    });
-  </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <title>Concepting</title>
+    <link rel="stylesheet" types="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+    <script src="https://cdn.jsdelivr.net/gh/akzhy/vara@master/src/vara.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollToTop').fadeIn();
+                    $('.scrollIndicator').fadeOut();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                    $('.scrollIndicator').fadeIn(2100);
+                }
+            });
+            $('.scrollToTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000)
+            })
+        });
+        $(document).ready(function() {
+            $('.scrollIndicator').delay(2100).fadeIn(400);
+        });
+    </script>
 </head>
 
 <body>
-  <nav>
-    <div class="logo">
-      <h4>Concepting</h4>
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#" class="active">Subjects</a>
+    <nav>
+        <div class="logo">
+            <h4>Concepting</h4>
+        </div>
         <ul>
-          <li><a href="userResearch.html">User Research</a></li>
-          <li><a href="development.html">Development</a></li>
-          <li><a href="prototyping.html">Prototyping</a></li>
-          <li><a href="concepting.html" class="active">Concepting</a></li>
-          <li><a href="strategy.html">Strategy</a></li>
-          <li><a href="aisha.html">Aisha</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
+            <li><a href="#" class="active">Subjects</a>
+                <ul>
+                    <li><a href="userResearch.html">User Research</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="concepting.html" class="active">Concepting</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="aisha.html">Aisha</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
         </ul>
-      </li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-  <section class="bg sec1">
-    <div id="draw"></div>
-  </section>
+    </nav>
+    <section class="bg sec1">
+        <img class="header" src="https://dl.dropboxusercontent.com/s/4p6h8rz2bbirwkf/header_concepting.png?dl=0">
+    </section>
 
-  <!-- All projects displayed on card linking to their own page -->
-  <section class="bg projects">
-    <div class="box">
-      <a href="urbansafari.html">
-        <div class="card">
-          <div class="imgBx">
-            <img src="https://i.postimg.cc/MKT3nzk1/card-Urban-Safari.png">
-          </div>
-          <div class="details">
-            <h2>Urban Safari<br><span>2-9-2019</span></h2>
-          </div>
+    <!-- All projects displayed on card linking to their own page -->
+    <section class="bg projects">
+        <div class="box">
+
+            <a href="urbansafari.html">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://i.postimg.cc/MKT3nzk1/card-Urban-Safari.png">
+                    </div>
+                    <div class="details">
+                        <h2>Urban Safari<br><span>2-9-2019</span></h2>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://i.postimg.cc/fb9BFNLR/underCon.png">
+                    </div>
+                    <div class="details">
+                        <h2>Visual Associations<br><span>9-9-2019</span></h2>
+                    </div>
+                </div>
+            </a>
+
+            <a href="worldPressPhoto.html">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://i.postimg.cc/t4szykFr/card-World-Press-Photo.png">
+                    </div>
+                    <div class="details">
+                        <h2>World Press Photo<br><span>23-9-2019</span></h2>
+                    </div>
+                </div>
+            </a>
+
+            <a href="logo_design.html">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/thumbnail_logo_design.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>Logo Design<br><span>8-10-2019</span></h2>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://i.postimg.cc/fb9BFNLR/underCon.png">
+                    </div>
+                    <div class="details">
+                        <h2>Business Cards<br><span>27-10-2019</span></h2>
+                    </div>
+                </div>
+            </a>
+
+            <a href="album_covers.html">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/thumbnail_album.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>Album Covers<br><span>4-11-2019</span></h2>
+                    </div>
+                </div>
+            </a>
+
+            <a href="hologram_videos.html">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/thumbnail_hologram.gif">
+                    </div>
+                    <div class="details">
+                        <h2>Hologram Videos<br><span>18-11-2019</span></h2>
+                    </div>
+                </div>
+            </a>
+
         </div>
-      </a>
-      <a href="#">
-        <div class="card">
-          <div class="imgBx">
-            <img src="https://i.postimg.cc/Kck7wMrJ/card-Visual-Associations.png">
-          </div>
-          <div class="details">
-            <h2>Visual Associations<br><span>9-9-2019</span></h2>
-          </div>
-        </div>
-      </a>
-      <a href="worldPressPhoto.html">
-        <div class="card">
-          <div class="imgBx">
-            <img src="https://i.postimg.cc/t4szykFr/card-World-Press-Photo.png">
-          </div>
-          <div class="details">
-            <h2>World Press Photo<br><span>23-9-2019</span></h2>
-          </div>
-        </div>
-      </a>
+    </section>
+
+    <!-- Scroll indicator -->
+    <div class="scrollIndicator">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-  </section>
 
-  <!-- Scroll indicator -->
-  <div class="scrollIndicator">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <!-- Button to scroll back to the top -->
+    <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
 
-  <!-- Button to scroll back to the top -->
-  <a href="#" class="scrollToTop">⮝</a>
-
-  <script>
-    // Drawing "Projects" with vara library
-    var vara = new Vara("#draw", "https://cdn.jsdelivr.net/gh/akzhy/vara/fonts/Pacifico/PacificoSLO.json", [{
-      text: "Concepting",
-      strokeWidth: 2,
-      y: 320,
-      x: 7,
-      color: "black"
-    }, {
-      text: "Concepting",
-      strokeWidth: 2,
-      y: -565,
-      x: 0,
-      queued: false,
-      color: "white"
-    }], {
-      fontSize: 150,
-      textAlign: "center"
-    });
-  </script>
+    <script>
+        $(document).ready(function() {
+            $('.scrollIndicator').click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".box").offset().top - 100
+                }, 1000);
+            });
+        });
+    </script>
 </body></html>

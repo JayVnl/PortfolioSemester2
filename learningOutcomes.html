@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Home</title>
+    <link rel="stylesheet" types="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+    <script src="https://cdn.jsdelivr.net/gh/akzhy/vara@master/src/vara.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollToTop').fadeIn();
+                    $('.scrollIndicator').fadeOut();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                    $('.scrollIndicator').fadeIn(2100);
+                }
+            });
+            $('.scrollToTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000)
+            })
+        });
+        $(document).ready(function() {
+            $('.scrollIndicator').delay(2100).fadeIn(400);
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Learning Outcomes</h4>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learningOutcomes.html" class="active">Learning Outcomes</a></li>
+            <li><a href="#">Subjects</a>
+                <ul>
+                    <li><a href="userResearch.html">User Research</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="concepting.html">Concepting</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="aisha.html">Aisha</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section class="bg sec1">
+        <img class="header" src="https://dl.dropboxusercontent.com/s/xrwl4fv54jtqkgy/header_learningoutcomes.png?dl=0">
+    </section>
+
+    <section class="bg projects">
+        <div class="box">
+
+            <a href="lo_brandstrategy.html">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/lo_brandstrategy.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>Brand Strategy<br><span>SCO</span></h2>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="lo_mediaproducts.html">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/lo_mediaproducts.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>Media Products<br><span>SCO</span></h2>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="lo_productandprocess.html">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/lo_productprocess.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>Product & Process<br><span>DEV</span></h2>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="lo_prototyping.html">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/thumbnail_prototyping.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>Prototyping<br><span>UEX</span></h2>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="lo_userresearch.html">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/thumbnail_userresearch.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>User Research<br><span>UEX</span></h2>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://i.postimg.cc/fb9BFNLR/underCon.png">
+                    </div>
+                    <div class="details">
+                        <h2>Complete Products<br><span>PTM</span></h2>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://i.postimg.cc/fb9BFNLR/underCon.png">
+                    </div>
+                    <div class="details">
+                        <h2>Meet Client Needs<br><span>PTM</span></h2>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://i.postimg.cc/fb9BFNLR/underCon.png">
+                    </div>
+                    <div class="details">
+                        <h2>Insights<br><span>PRO</span></h2>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://i.postimg.cc/fb9BFNLR/underCon.png">
+                    </div>
+                    <div class="details">
+                        <h2>Communication<br><span>PRO</span></h2>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://i.postimg.cc/fb9BFNLR/underCon.png">
+                    </div>
+                    <div class="details">
+                        <h2>Learning Skills<br><span>PRO</span></h2>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Scroll indicator -->
+    <div class="scrollIndicator">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Button to scroll back to the top -->
+    <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
+
+    <script>
+        $(document).ready(function() {
+            $('.scrollIndicator').click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".box").offset().top - 100
+                }, 1000);
+            });
+        });
+    </script>
+</body></html>
