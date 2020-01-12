@@ -2,92 +2,178 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
-  <title>Prototyping</title>
-  <link rel="stylesheet" types="text/css" href="style.css">
-  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <title>Prototyping</title>
+    <link rel="stylesheet" types="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-  <script>
-    $(window).on('scroll', function() {
-      if ($(window).scrollTop()) {
-        $('nav').addClass('black');
-      } else {
-        $('nav').removeClass('black');
-      }
-    });
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-          $('.scrollToTop').fadeIn();
-          $('.scrollIndicator').fadeOut();
-        } else {
-          $('.scrollToTop').fadeOut();
-          $('.scrollIndicator').fadeIn(2100);
-        }
-      });
-      $('.scrollToTop').click(function() {
-        $('html,body').animate({
-          scrollTop: 0
-        }, 1000)
-      })
-    });
-    $(document).ready(function() {
-      $('.scrollIndicator').delay(2100).fadeIn(400);
-    });
-  </script>
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollToTop').fadeIn();
+                    $('.scrollIndicator').fadeOut();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                    $('.scrollIndicator').fadeIn(2100);
+                }
+            });
+            $('.scrollToTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000)
+            })
+        });
+        $(document).ready(function() {
+            $('.scrollIndicator').delay(2100).fadeIn(400);
+        });
+
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                return false;
+            }
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
+                alert('not allowed');
+                return false;
+            } else {
+                return true;
+            }
+        };
+    </script>
+
 </head>
 
-<body>
-  <nav>
-    <div class="logo">
-      <h4>Prototyping</h4>
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
-      <li><a href="#">Subjects</a>
-        <ul>
-          <li><a href="userResearch.html">User Research</a></li>
-          <li><a href="development.html">Development</a></li>
-          <li><a href="prototyping.html">Prototyping</a></li>
-          <li><a href="concepting.html">Concepting</a></li>
-          <li><a href="strategy.html">Strategy</a></li>
-          <li><a href="aisha.html">Aisha</a></li>
-        </ul>
-      </li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-  <section class="bg">
-    <div class="exercise-block">
-      <div class="projectHeader"><span>Prototyping</span>
-        <hr class="normal-hr">
-        <h6>Prism Hologram</h6>
-        <div>
-          <img class="img-prisma1" src="images/prototyping_prisma1.jpg">
-          <img class="img-prisma1" src="images/prototyping_prisma2.jpg">
-          <p>
-            For my prototyping assignment i am making the prisms that are used for prism holograms. Our group also needs these for our project since we are making holograms for our client.<br>
-            There will be most likely 3 different prisms i have made at the end of this semester, 2 of these i have already made and are shown in the pictures above.
-            The next iteration will be made during this week or next week.<br><br>
-            
-            The first image is my first try of making a prism out of plastic, i had a plastic packaging left from a door lock and cut it in the pieces i needed for making a prism. The plastic was quite flexible, lightweight and easy to cut.<br>
-            I then tested it with a few users to see what they thought about it when trying to use it for a hologram.<br>
-            They said that it was sturdy, easy to use but the plastic was not completely see through which made the holograms not look as good as they could be.<br><br>
-            
-            The second image is my first iteration which is the same dimensions as the previous prism but with a different material and a different way of applying the tape to hold it together.<br>
-            This prism is made out of the plastic of a cd case, this made the prism a lot harder to make since it took me quite a long time cutting out all the pieces with a stanley knife compared to the other prism. The benefit of this prism compared to the other one is that the plastic is a lot clearer and so makes the holograms come out better.<br>
-            I also tested this prism with a few users and they thought as well that the clearer plastic is a lot better for the holograms but there were also some issues, the main issue was that the plastic tape that i applied on this prism differently from the rest, made it harder to keep it in shape on their mobile phone since it was not as sturdy as the previous one. This issue can be easily fixed by changing the way i applied the tape. Tape on the outside instead of the inside.
-          </p>
+<body oncontextmenu="return false">
+    <nav>
+        <div class="logo">
+            <h4>Prototyping</h4>
         </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
+            <li><a href="#">Subjects</a>
+                <ul>
+                    <li><a href="userResearch.html">User Research</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="selfieweek.html">Selfie Week</a></li>
+                    <li><a href="concepting.html">Concepting</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="sprintx.html">Sprint X</a></li>
+                    <li><a href="aisha.html">Aisha</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section class="bg">
+        <div class="exercise-block">
+            <div class="projectHeader"><span>Prototyping</span>
+                <hr class="normal-hr">
+                <h6 class="interview-header normal-hr">Physical Prototype</h6>
+                <div>
+                    <img class="img-prisma1" src="images/prototyping_prisma1.jpg">
+                    <img class="img-prisma1" src="images/prototyping_prisma2.jpg">
+                    <p>
+                        For my prototyping assignment i am making the prisms that are used for prism holograms. Our group also needs these for our project since we are making holograms for our client.<br>
+                        There will be most likely 3 different prisms i have made at the end of this semester, 2 of these i have already made and are shown in the pictures above.
+                        The next iteration will be made during this week or next week.<br><br>
 
+                        The first image is my first try of making a prism out of plastic, i had a plastic packaging left from a door lock and cut it in the pieces i needed for making a prism. The plastic was quite flexible, lightweight and easy to cut.<br>
+                        I then tested it with a few users to see what they thought about it when trying to use it for a hologram.<br>
+                        They said that it was sturdy, easy to use but the plastic was not completely see through which made the holograms not look as good as they could be.<br><br>
 
-      </div>
-    </div>
-  </section>
+                        The second image is my first iteration which is the same dimensions as the previous prism but with a different material and a different way of applying the tape to hold it together.<br>
+                        This prism is made out of the plastic of a cd case, this made the prism a lot harder to make since it took me quite a long time cutting out all the pieces with a stanley knife compared to the other prism. The benefit of this prism compared to the other one is that the plastic is a lot clearer and so makes the holograms come out better.<br>
+                        I also tested this prism with a few users and they thought as well that the clearer plastic is a lot better for the holograms but there were also some issues, the main issue was that the plastic tape that i applied on this prism differently from the rest, made it harder to keep it in shape on their mobile phone since it was not as sturdy as the previous one. This issue can be easily fixed by changing the way i applied the tape. Tape on the outside instead of the inside.
+                    </p>
+                </div>
+                <hr class="normal-hr larger-hr">
+                <h6 class="interview-header">Final version</h6>
+                <img class="img-prisma1" src="images/sketch.png">
+                <img class="img-prisma1" src="images/prototype3.jfif">
+                <p>
+                    I have completed my final version of the physical prototype.<br>
+                    This prototype is more than 20 times as big as the other 2 prototypes and was also a lot more work to make. I started off by calculating how big each side should be to keep the same ratio as the smaller prototypes.<br>
+                    After this i sketched how i should saw all the pieces in the most effecient way out of an acrylic plate. While sawing the plate i got the blade so hot that the plastic glued itself back to itself but at last with some effort i got all the pieces i needed and made the prism.<br><br>
 
-  <!-- Button to scroll back to the top -->
-  <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
+                    I tested the prism with a few users when i had it setup correctly and it worked okay but it could have been better.<br>
+                    Most of the problems with viewing the hologram was that the plastic was blurrying the image/video so it made it up close a little harder to see but not too noticeable from a distance.<br>
+                    Furthermore the plastic somehow didn't want to project the hologram on 2 opposite sides, still no clue why but the other 2 sides worked fine.<br>
+                    If i ever make another prism like this i will do some more research into what kind of plastic is most viable for viewing holograms and set it up so that it can be used upside down and prevent people using it as a trash bin.
+                </p>
+                <hr class="normal-hr larger-hr">
+                <h6 class="interview-header">Reflection</h6>
+                <p>
+                    From making these prototypes i learned a lot.
+                    <br>
+                    Doing some research into each material that you are gonna use is crucial for delivering a good product since you could spend a lot of time making a prototype and at the end figure out there were better materials that could boost your prototype's performance.
+                    <br>
+                    <br>
+                    Also noticing how each tester approaches your prototype for the first time can say a lot or give you feedback without even anything being said, like everyone kneeling to see the hologram could let you as builder know that the product should be displayed differently in which each tester doesn't have to make a special movement to see it.
+                </p>
+
+                <hr class="normal-hr larger-hr">
+
+                <h6 class="interview-header normal-hr">Storyboard</h6>
+                <div class="box-album-covers">
+                    <p>
+                        This storyboard is made by me and is supposed to show the journey that a person or customer would have when finding out who Aisha is.<br><br>
+
+                        The first picture is used to seek attention from potential fans of Aisha.<br>
+                        To describe the drawing a bit better, there is an advertisement of Aisha on a screen or wall at a train station. Since Aisha's target audience are most likely students i think that putting an advertisement on a train station where students come multiple times everyday would be a great point to get some more popularity.<br>
+                        <br>
+                        The second picture shows a potential fan searching for Aisha on wikipedia to see who she is.
+                        <br>
+                        The third picture shows the same potential fan discovering that Aisha has a spotify where he can listen to her songs.
+                        <br>
+                        The fourth picture shows the fan searching for information where Aisha will be performing since he would like to attend, he does this by going to her instagram.
+                        <br>
+                        The fifth picture shows the fan ordering tickets to the performance of Aisha.
+                        <br>
+                        The sixth picture shows the fan attending the performance of Aisha.
+                    </p>
+                    <div>
+                        <img class="img-prisma1 larger-hr" src="images/storyboard.png">
+                    </div>
+                </div>
+                <hr class="normal-hr larger-hr">
+                <h6 class="interview-header">Reflection</h6>
+                <p>
+                    From making this storyboard i have learned how it is useful to make it clear for fellow teammembers and most importantly yourself how you would like to setup the journey of a potential customer for your product.
+                    <br>
+                    <br>
+                    When you have a clear picture of how it should be going you can progress into making it happen while following the steps you made in the storyboard.
+                    <br>
+                    I will definitely use this technique for probably every big project i am going to make.
+                    <br>
+                    <br>
+                    I have also made a storyboard during my selfie week, this helped me putting the pieces together and help myself get a clear picture of what i am going to make.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Button to scroll back to the top -->
+    <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
 
 </body></html>

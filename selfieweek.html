@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <title>Selfie Week</title>
+    <link rel="stylesheet" types="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollToTop').fadeIn();
+                    $('.scrollIndicator').fadeOut();
+                    $('.github').css("right", "9.2vh");
+                    $('.github').css("transition", ".5s");
+                } else {
+                    $('.scrollToTop').fadeOut();
+                    $('.scrollIndicator').fadeIn(2100);
+                    $('.github').css("right", "2vh");
+                    $('.github').css("transition", ".5s");
+                }
+            });
+            $('.scrollToTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000)
+            })
+        });
+        $(document).ready(function() {
+            $('.scrollIndicator').delay(2100).fadeIn(400);
+        });
+    
+    $(document).keydown(function (event) {
+    if (event.keyCode == 123) { 
+        return false;
+    }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { 
+        return false;
+    }
+});
+      
+      document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            alert('not allowed');
+            return false;
+        } else {
+            return true;
+        }
+};
+
+    </script>
+  
+</head>
+
+<body oncontextmenu="return false">
+    <nav>
+        <div class="logo">
+            <h4>Selfie Week</h4>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
+            <li><a class="active" href="#">Subjects</a>
+                <ul>
+                    <li><a href="userResearch.html">User Research</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="selfieweek.html">Selfie Week</a></li>
+                    <li><a href="concepting.html">Concepting</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="sprintx.html">Sprint X</a></li>
+                    <li><a href="aisha.html">Aisha</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section class="bg">
+        <div class="exercise-block">
+            <div class="projectHeader"><span>Selfie Week</span>
+                <hr class="normal-hr larger-hr">
+                <p>
+                    For my Selfie Week project i wasn't entirely sure what to make in a week time, the one thing i did want in my project was something that wouldn't necessery be all to useful but give me more experience and learn me more of something i don't do too often but want to.
+                    <br>
+                    So i wanted to do something with video editing but also wanted to use different techniques that i learned in the past weeks / months.
+                    <br>
+                </p>
+                
+                <hr class="normal-hr larger-hr">
+                
+                <h6 class="interview-header">Storyboard</h6>
+                <img class="img-failstack-ps" src="images/sw_storyboard.jpg">
+                <p class="smaller-hr">
+                    I started off by making a sort of storyboard / guide that would make it more clear to me how i wanted to approach my project and what i wanted to put into it.
+                    <br>
+                    I wanted to use a special effect as a theme and chose Neon for this as you will see at the end result. 
+                    <br>
+                    <br>
+                    The whole idea was to make different scenarios defining who i am hence the name Selfie Week as well. 
+                    <br>
+                    So the first row of images is about me playing football where i wanted to try and make it look like i was juggling with the ball and at the end shoot it into the screen for a transition into the next scene.
+                    <br>
+                    <br>
+                    Unfortunately i had to scrap this idea since i didn't have enough time to get the design and renders done on time, all the other scenes did make it into the final result.
+                    <br>
+                    <br>
+                    The second row of images is about me teaching since i like to help other people with coding, programming or designing.
+                    <br>
+                    This scene has been fully designed and edited into Neon in after effects.
+                    <br>
+                    <br>
+                    The third row is basically how i wanted to animate a logo that i also made during the Selfie Week, more on this in the next section.
+                    <br>
+                    <br>
+                    And the last row is just an ending screen also made into neon with animations.
+                </p>
+                
+                <hr class="normal-hr larger-hr">
+                
+                <h6 class="interview-header">Logo Design</h6>
+                <img class="img-failstack-ps" src="images/sw_logo_iterations.jpg">
+                <p class="smaller-hr">
+                    I had a general idea of a logo i wanted to make for myself a few weeks before the actual Selfie Week, funny enough i got the idea while being in the shower drawing on the glass.
+                    <br>
+                    <br>
+                    When the Selfie Week started i began drawing the logo i had in my head and make different iterations from it with little changes in each.                
+                </p>
+                <img class="img-failstack-ps" src="images/sw_logo_chosen.jpg">
+                <p class="smaller-hr">
+                    Eventually i chose one of the iterations i made as the one my peers and me looked best and create it digitally through Affinity Designer (same sort of programm as Adobe Illustrator but in my opinion better).
+                </p>
+                <img style="margin-top: -9%;" class="img-prisma1" src="images/sw_logo.png">
+                <img class="img-prisma1" src="images/sw_logo_gif.gif">
+                <p>This is the end result of my logo and i am happy with how it turned out.</p>
+                
+                <hr class="normal-hr larger-hr">
+
+                <h6 class="interview-header">Video</h6>
+                <video class="smaller-hr" width="1280" height="720" controls>
+                    <source src="images/sw_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="smaller-hr">
+                    This video is my end result of the Selfie Week and it combines all things i made above.
+                    <br>
+                    I am very happy with how it turned out, especially the logo and the neon animation of me teaching, i would have liked if i was able to also put in the football animation as i designed in my storyboard but i underestimated the time it would take me to make the rest and i rather have a good few products with scrapping some other ones then having everything but not all up too my standard.
+                    <br>
+                    <br>
+                    From this project i have learned that it is okay to scrap certain parts as long as i can make the rest as i wanted.
+                    <br>
+                    I have gained more experience in video editing through after effects and also logo designing which i really enjoyed.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Button to scroll back to the top -->
+    <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
+</body></html>

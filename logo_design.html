@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
     <title>Logo Design</title>
     <link rel="stylesheet" types="text/css" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     <script>
@@ -35,10 +35,33 @@
         $(document).ready(function() {
             $('.scrollIndicator').delay(2100).fadeIn(400);
         });
+
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                return false;
+            }
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
+                alert('not allowed');
+                return false;
+            } else {
+                return true;
+            }
+        };
     </script>
+
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <nav>
         <div class="logo">
             <h4>Logo Design</h4>
@@ -51,8 +74,10 @@
                     <li><a href="userResearch.html">User Research</a></li>
                     <li><a href="development.html">Development</a></li>
                     <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="selfieweek.html">Selfie Week</a></li>
                     <li><a href="concepting.html">Concepting</a></li>
                     <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="sprintx.html">Sprint X</a></li>
                     <li><a href="aisha.html">Aisha</a></li>
                 </ul>
             </li>
@@ -65,9 +90,11 @@
                 <hr class="normal-hr">
                 <div class="box-logo">
                     <p class="exception">
-                        My group member Jordy and me both made a logo for Aisha.<br> After doing some brand tests on our logo's to Aisha's target audience and input from Aisha herself we both made iterations and ended up with a final result.<br><br>
+                        My group member Jordy and me both made a logo for Aisha.<br><br>
+                        He made the 2 logos on the left and i made the 2 logos on the right. <br>After doing some brand tests on our logo's to Aisha's target audience and input from Aisha herself we both made iterations and ended up with a final result.<br><br>
+                        The 4th logo was the final product we chose for Aisha, this logo was the favourite of Aisha's target audience and the one she also liked the most.<br><br>
 
-                        I learned from this experience that it's always useful and necessary to ask for as much feedback possible and make iterations according to that.
+                        I learned from this experience that it's always useful and necessary to ask for as much feedback as possible and make iterations according to that.
                     </p>
                     <div>
                         <img class="img-logo" src="images/logo_aisha_iteration1.png">

@@ -2,118 +2,145 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
-  <title>Brand Strategy</title>
-  <link rel="stylesheet" types="text/css" href="style.css">
-  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <title>Brand Strategy</title>
+    <link rel="stylesheet" types="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-  <script>
-    $(window).on('scroll', function() {
-      if ($(window).scrollTop()) {
-        $('nav').addClass('black');
-      } else {
-        $('nav').removeClass('black');
-      }
-    });
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-          $('.scrollToTop').fadeIn();
-          $('.scrollIndicator').fadeOut();
-        } else {
-          $('.scrollToTop').fadeOut();
-          $('.scrollIndicator').fadeIn(2100);
-        }
-      });
-      $('.scrollToTop').click(function() {
-        $('html,body').animate({
-          scrollTop: 0
-        }, 1000)
-      })
-    });
-    $(document).ready(function() {
-      $('.scrollIndicator').delay(2100).fadeIn(400);
-    });
-  </script>
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollToTop').fadeIn();
+                    $('.scrollIndicator').fadeOut();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                    $('.scrollIndicator').fadeIn(2100);
+                }
+            });
+            $('.scrollToTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000)
+            })
+        });
+        $(document).ready(function() {
+            $('.scrollIndicator').delay(2100).fadeIn(400);
+        });
+
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                return false;
+            }
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
+                alert('not allowed');
+                return false;
+            } else {
+                return true;
+            }
+        };
+    </script>
+
 </head>
 
-<body>
-  <nav>
-    <div class="logo">
-      <h4>Brand Strategy</h4>
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
-      <li><a href="#">Subjects</a>
-        <ul>
-          <li><a href="userResearch.html">User Research</a></li>
-          <li><a href="development.html">Development</a></li>
-          <li><a href="prototyping.html">Prototyping</a></li>
-          <li><a href="concepting.html">Concepting</a></li>
-          <li><a href="strategy.html">Strategy</a></li>
-          <li><a href="aisha.html">Aisha</a></li>
-        </ul>
-      </li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-  <section class="bg">
-    <div class="exercise-block">
-      <div class="projectHeader"><span>Brand Strategy</span>
-        <hr class="normal-hr">
-        <h6>Demographic</h6>
-        <div class="box-demographic">
-          <p>
-            Together with my group member Sem, we made a demographic about the target audience of our client.<br><br>
-            We started off by looking at other demographics as an example of what we were gonna create.<br>
-            We chose 4 topics that we would use in our demographic these are: <br>
-            - The gender of the target audience<br>
-            - The location where you would hear Aisha's music<br>
-            - The age of the target audience<br>
-            - The education of the target audience<br><br>
-            The statistics are mainly from other artists that resemble to Aisha's music, since we didn't have all these details at the time because we made this in the first few weeks before we exactly knew who Aisha's target audience is.<br><br>
-            From this assignment i have learned how to create demographics and will most likely redesign this one and use the statistics that our group gathered so the information is more accurate.
-          </p>
-          <img class="img-demography" src="images/demography.png">
+<body oncontextmenu="return false">
+    <nav>
+        <div class="logo">
+            <h4>Brand Strategy</h4>
         </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
+            <li><a href="#">Subjects</a>
+                <ul>
+                    <li><a href="userResearch.html">User Research</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="selfieweek.html">Selfie Week</a></li>
+                    <li><a href="concepting.html">Concepting</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="sprintx.html">Sprint X</a></li>
+                    <li><a href="aisha.html">Aisha</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section class="bg">
+        <div class="exercise-block">
+            <div class="projectHeader"><span>Brand Strategy</span>
+                <hr class="normal-hr">
+                <h6 class="interview-header normal-hr">Demographic</h6>
+                <div class="box-demographic">
+                    <p>
+                        Together with my group member Sem, we made a demographic about the target audience of our client.<br><br>
+                        We started off by looking at other demographics as an example of what we were gonna create.<br>
+                        We chose 4 topics that we would use in our demographic these are: <br>
+                        - The gender of the target audience<br>
+                        - The location where you would hear Aisha's music<br>
+                        - The age of the target audience<br>
+                        - The education of the target audience<br><br>
+                        The statistics are mainly from other artists that resemble to Aisha's music, since we didn't have all these details at the time because we made this in the first few weeks before we exactly knew who Aisha's target audience is.<br><br>
+                        From this assignment i have learned how to create demographics and will most likely redesign this one and use the statistics that our group gathered so the information is more accurate.
+                    </p>
+                    <img class="img-demography" src="images/demography.png">
+                </div>
+                
+                <hr class="normal-hr">
+                
+                <h6 class="interview-header normal-hr">Market Analysis</h6>
+                <p>
+                    Together with my group member Will, we made a market analysis.<br>
+                    We started off by researching what exactly a market analysis is and how to make one. We discovered that a market analysis bascically is an instruction of how you should approach getting your client "on the market" meaning how to get her music out to other people and make her more known.<br><br>
 
-        <h6>Market analysis</h6>
-        <p>
-          Together with my group member Will, we made a market analysis.<br>
-          We started off by researching what exactly a market analysis is and how to make one. We discovered that a market analysis bascically is an instruction of how you should approach getting your client "on the market" meaning how to get her music out to other people and make her more known.<br><br>
+                    Hoe ziet de muziekindustrie er tegenwoordig uit voor je artiest?<br>
+                    Op dit moment ziet de muziekindustrie er goed uit. Sinds 2015 is er een stijgende lijn in de omzet. Dit is mede te danken aan de streaming services zoals Spotify. De omzet is van de ongeveer 30% gestegen naar 65% van de totale marktomzet. Naast dat is de LP (Vinyl) een comeback aan het maken. De winst uit LPs is met wel 21% gestegen in de afgelopen jaren. CDs lijken daarentegen helemaal uit de muziekscene. Al met al zorgt deze ontwikkeling voor een groei in salarissen van artiesten.<br>
 
-          Hoe ziet de muziekindustrie er tegenwoordig uit voor je artiest?<br>
-          Op dit moment ziet de muziekindustrie er goed uit. Sinds 2015 is er een stijgende lijn in de omzet. Dit is mede te danken aan de streaming services zoals Spotify. De omzet is van de ongeveer 30% gestegen naar 65% van de totale marktomzet. Naast dat is de LP (Vinyl) een comeback aan het maken. De winst uit LPs is met wel 21% gestegen in de afgelopen jaren. CDs lijken daarentegen helemaal uit de muziekscene. Al met al zorgt deze ontwikkeling voor een groei in salarissen van artiesten.<br>
+                    Op dit moment leven artiesten met maar een regel Content = king. En hoe doen ze dat, fotos zijn zo gemaakt en kunnen binnen een paar seconde online staan. Optredens kunnen tegenwoordig gestreamd worden via verschillende servicen. Daar komt ook nog bij dat het maken van muziek simpeler en bovendien goedkoper is geworden. Dit heeft als effect dat veel artiesten geen gebruik meer maken van een (major) label.<br><br>
 
-          Op dit moment leven artiesten met maar een regel Content = king. En hoe doen ze dat, fotos zijn zo gemaakt en kunnen binnen een paar seconde online staan. Optredens kunnen tegenwoordig gestreamd worden via verschillende servicen. Daar komt ook nog bij dat het maken van muziek simpeler en bovendien goedkoper is geworden. Dit heeft als effect dat veel artiesten geen gebruik meer maken van een (major) label.<br><br>
+                    Hoe komt de muziek op spotify of op de radio?<br>
+                    Artiesten kunnen hun materiaal niet rechtstreeks bij Spotify indienen. Ze moeten werken met een label of een distributeur, dit geldt ook voor onafhankelijke artiesten.<br><br>
 
-          Hoe komt de muziek op spotify of op de radio?<br>
-          Artiesten kunnen hun materiaal niet rechtstreeks bij Spotify indienen. Ze moeten werken met een label of een distributeur, dit geldt ook voor onafhankelijke artiesten.<br><br>
+                    Wat zorgt er voor dat je trending wordt op youtube bijvoorbeeld?<br>
+                    Als eerste moet je video iets bevatten wat actueel is dit kan bijvoorbeeld een onderwerp zijn wat op dat moment groot in het nieuws komt of een trend zijn die net aan de gang is.
+                    Voor de rest is het vooral aandacht trekken van publiek buiten het mediaplatform dus deel het op social media, laat vrienden het aanbevelen en maak reclame op drukke plekken waar vooral veel jonge mensen langskomen zoals bushokjes of treinstations.<br><br>
 
-          Wat zorgt er voor dat je trending wordt op youtube bijvoorbeeld?<br>
-          Als eerste moet je video iets bevatten wat actueel is dit kan bijvoorbeeld een onderwerp zijn wat op dat moment groot in het nieuws komt of een trend zijn die net aan de gang is.
-          Voor de rest is het vooral aandacht trekken van publiek buiten het mediaplatform dus deel het op social media, laat vrienden het aanbevelen en maak reclame op drukke plekken waar vooral veel jonge mensen langskomen zoals bushokjes of treinstations.<br><br>
+                    Hoe kan je ervoor zorgen geboekt te worden voor een festival?<br>
+                    Tegenwoordig kan je als artiest je gratis inschrijven bij een boekingskantoor. Hier vind je vooral de de beginnende artiesten.
+                    De wat grotere artiesten zijn zelf te vinden op het internet met vaak een eigen website.
 
-          Hoe kan je ervoor zorgen geboekt te worden voor een festival?<br>
-          Tegenwoordig kan je als artiest je gratis inschrijven bij een boekingskantoor. Hier vind je vooral de de beginnende artiesten.
-          De wat grotere artiesten zijn zelf te vinden op het internet met vaak een eigen website.
+                    Nu is alleen de vraag hoe krijgen we het merk Aisha in de spotlight. Aan de hand van haar doelgroep zijn we tot de volgende conclusie gekomen.<br><br>
 
-          Nu is alleen de vraag hoe krijgen we het merk Aisha in de spotlight. Aan de hand van haar doelgroep zijn we tot de volgende conclusie gekomen.<br><br>
-          
-          Conclusion:<br>
-          Mensen rond de 20-25 zijn redelijk bij de tijd en hebben negen van de tien keer Spotify, daarom is het sowieso een goed plan om haar muziek op spotify te krijgen zodat haar doelgroep haar makkelijker kan ontdekken.
-          De muziek van Aisha beperkt zich tot het Nederlandstalig publiek. Het doel is dus om haar trending te krijgen in bijvoorbeeld de top 40 NL hits.
-          Dit gebeurt echter alleen als je veel gestreamd wordt en daarvoor moeten we een stapje terug. Eerst moet er interesse voor haar muziek komen dit kan bereikt worden door veel activiteit op social media (Instagram, Youtube, Facebook etc).
-          Verder ook veel optreden, zo zorg je ervoor dat je actueel blijft en in de spotlight blijft. Dit houdt dan in dat je soms voor een kleiner publiek staat maar dan kan je wel gemakkelijker aan meerdere opdrachten in een week komen. Op die manier kom je vaker naar je doelgroep, als je bijvoorbeeld in een line-up staat.
+                    Conclusion:<br>
+                    Mensen rond de 20-25 zijn redelijk bij de tijd en hebben negen van de tien keer Spotify, daarom is het sowieso een goed plan om haar muziek op spotify te krijgen zodat haar doelgroep haar makkelijker kan ontdekken.
+                    De muziek van Aisha beperkt zich tot het Nederlandstalig publiek. Het doel is dus om haar trending te krijgen in bijvoorbeeld de top 40 NL hits.
+                    Dit gebeurt echter alleen als je veel gestreamd wordt en daarvoor moeten we een stapje terug. Eerst moet er interesse voor haar muziek komen dit kan bereikt worden door veel activiteit op social media (Instagram, Youtube, Facebook etc).
+                    Verder ook veel optreden, zo zorg je ervoor dat je actueel blijft en in de spotlight blijft. Dit houdt dan in dat je soms voor een kleiner publiek staat maar dan kan je wel gemakkelijker aan meerdere opdrachten in een week komen. Op die manier kom je vaker naar je doelgroep, als je bijvoorbeeld in een line-up staat.
 
-        </p>
-      </div>
-    </div>
-  </section>
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Button to scroll back to the top -->
-  <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
+    <!-- Button to scroll back to the top -->
+    <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
 
 </body></html>

@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Manjari:700');
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 
+@font-face {
+        font-family: "Hunters";
+        src: url(~/fonts/Hunters.otf);
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+
+.noScroll {
+    overflow: hidden;
 }
 
 .bg {
@@ -82,7 +91,7 @@ nav {
     padding: 1vh 10vh;
     box-sizing: border-box;
     transition: .5s;
-    z-index: 20;
+    z-index: 9999;
 }
 
 nav.black {
@@ -99,7 +108,7 @@ nav .logo h4 {
     position: absolute;
     display: inline;
     color: white;
-    font-family: 'Pacifico';
+    font-family: 'Hunters';
     font-size: 4.5vh;
     opacity: 0;
     transition: opacity .8s;
@@ -110,8 +119,8 @@ nav.black .logo h4 {
     position: absolute;
     display: inline;
     color: white;
-    font-family: 'Pacifico';
-    font-size: 4.5vh;
+    font-family: 'Hunters';
+    font-size: 7.4vh;
     opacity: 1;
     transition: opacity 3s;
     margin-top: -.7vh;
@@ -164,7 +173,7 @@ nav ul li ul {
     display: block;
     background: rgba(0, 0, 0, 0);
     width: 16vw;
-    height: 37vh;
+    height: 49vh;
     position: absolute;
     margin-top: -2.4vh;
     margin-left: -8.5vh;
@@ -398,16 +407,20 @@ nav.black ul li ul li {
 .projectHeader {
     text-align: center;
     color: white;
-    font-family: 'Pacifico';
-    font-size: 15.9vh;
-    text-shadow: 7px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Hunters';
+    font-size: 23vh;
     padding-top: 3%;
+}
+
+.projectHeader a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .projectTitle {
     text-align: center;
     color: white;
-    font-family: 'Manjari';
+    font-family: 'Pacifico';
     font-size: 60px;
     margin-top: -2%;
 }
@@ -452,49 +465,17 @@ nav.black ul li ul li {
     margin-bottom: 3%;
 }
 
-/* Visual Association */
-.vaImg img {
-    height: 400px;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    box-shadow: 5px 5px 10px black;
-    transform: scale(1);
-    transition: transform .5s ease-in-out;
-}
-
-.vaImg img:hover {
-
-    transform: scale(1.05);
-    transition: transform .5s ease-in-out;
-    cursor: pointer;
-}
-
-.vaImg span {
-    position: absolute;
-    margin-bottom: 10%;
-    margin-right: 1%;
-    float: right;
-    color: white;
-    text-align: center;
-    margin-left: 1%;
-    font-size: 30px;
-    margin-top: 8%;
-}
-
 /* Interview */
-.interview {
-    text-align: left;
-    color: white;
-    font-family: 'Manjari';
-    font-size: 30px;
-    margin-top: 2%;
-    margin-left: 20%;
-}
 
 .interviewAnswer {
-    position: absolute;
     margin-left: 5%;
-    margin-right: 20%;
+    margin-right: 0%;
+}
+
+.interview-header {
+    font-size: 7vh;
+    font-family: 'Manjari';
+    text-shadow: none;
 }
 
 /* General layout for exercises */
@@ -539,10 +520,21 @@ nav.black ul li ul li {
     margin-top: -2%;
 }
 
+.exercise-block .reverse-bottom {
+    margin-bottom: -1%;
+}
+
 /* Boxes */
 .box-demographic {
     display: flex;
     flex-flow: row-reverse nowrap;
+}
+
+.box-adobeXD {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-logo {
@@ -589,10 +581,28 @@ nav.black ul li ul li {
     margin-bottom: -2%;
 }
 
-.img-cover-mine {
-    border: 0.6vh solid #CE0E2D;
-    width: 19.2%;
+.img-designs {
+    width: 15%;
     height: auto;
+    margin-bottom: -2%;
+}
+
+.img-designXD {
+    width: 26%;
+    height: auto;
+    margin-right: 6%;
+}
+
+.img-businesscard {
+    width: 70%;
+    height: auto;
+    margin-bottom: -2%;
+}
+
+.img-businesscardcompare {
+    width: 30%;
+    height: auto;
+    margin-bottom: 50%;
 }
 
 .img-hologram {
@@ -607,6 +617,12 @@ nav.black ul li ul li {
     width: 50%;
     height: auto;
     margin: 1%;
+}
+
+.img-moodboard {
+    width: 30%;
+    height: auto;
+    margin-bottom: 21%;
 }
 
 .img-worldpress {
@@ -632,12 +648,12 @@ nav.black ul li ul li {
 }
 
 .img-toolbox {
-    width:25%;
+    width: 25%;
     height: auto;
 }
 
 .img-failstack-ps {
-    width:90%;
+    width: 90%;
     height: auto;
 }
 
@@ -651,4 +667,77 @@ nav.black ul li ul li {
 .img-prisma1 {
     width: 40%;
     height: auto;
+}
+
+.interview-audio {
+    height: 4vh;
+    display: flex;
+}
+
+/* Gif Header */
+#gif img {
+    height: 100%;
+    width: 100%;
+    margin-top: -6%;
+}
+
+/* Github button */
+.github {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh;
+    width: 3.4vw;
+    height: 3.4vw;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    border-radius: 40%;
+}
+
+.github:hover {
+    background: #CE0E2D;
+    transition: .6s;
+    border: 0.17vh solid white;
+}
+
+.github img {
+    width: 65%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.githubSide {
+    width: 4%;
+    height: auto;
+    margin-bottom: -0.2%;
+    transform: scale(1);
+    transition: .1s;
+}
+
+.githubSide:hover {
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+/* Slideshow */
+.sxSlideshow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.sxSlideshow .arrow{
+    width: 4%;
+    height: 4%;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: .1s;
+}
+
+.sxSlideshow .arrow:hover {
+    transform: scale(1.1);
+    transition: .1s;
 }

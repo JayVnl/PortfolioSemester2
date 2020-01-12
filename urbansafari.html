@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
     <title>Urban Safari</title>
     <link rel="stylesheet" types="text/css" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script>
         $(window).on('scroll', function() {
@@ -16,68 +16,32 @@
             }
         })
 
-        function initComparisons() {
-            var x, i;
-            x = document.getElementsByClassName("img-comp-overlay");
-            for (i = 0; i < x.length; i++) {
-                compareImages(x[i]);
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                return false;
             }
-
-            function compareImages(img) {
-                var slider, img, clicked = 0,
-                    w, h;
-                w = img.offsetWidth;
-                h = img.offsetHeight;
-                img.style.width = (w / 2) + "px";
-                slider = document.createElement("DIV");
-                slider.setAttribute("class", "img-comp-slider");
-                img.parentElement.insertBefore(slider, img);
-                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-                slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
-                slider.addEventListener("mousedown", slideReady);
-                window.addEventListener("mouseup", slideFinish);
-                slider.addEventListener("touchstart", slideReady);
-                window.addEventListener("touchstop", slideFinish);
-
-                function slideReady(e) {
-                    e.preventDefault();
-                    clicked = 1;
-                    window.addEventListener("mousemove", slideMove);
-                    window.addEventListener("touchmove", slideMove);
-                }
-
-                function slideFinish() {
-                    clicked = 0;
-                }
-
-                function slideMove(e) {
-                    var pos;
-                    if (clicked == 0) return false;
-                    pos = getCursorPos(e)
-                    if (pos < 0) pos = 0;
-                    if (pos > w) pos = w;
-                    slide(pos);
-                }
-
-                function getCursorPos(e) {
-                    var a, x = 0;
-                    e = e || window.event;
-                    a = img.getBoundingClientRect();
-                    x = e.pageX - a.left;
-                    x = x - window.pageXOffset;
-                    return x;
-                }
-
-                function slide(x) {
-                    img.style.width = x + "px";
-                    slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-                }
+            if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                return false;
             }
-        }
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
+                alert('not allowed');
+                return false;
+            } else {
+                return true;
+            }
+        };
     </script>
+
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <nav>
         <div class="logo">
             <h4>Urban Safari</h4>
@@ -90,8 +54,10 @@
                     <li><a href="userResearch.html">User Research</a></li>
                     <li><a href="development.html">Development</a></li>
                     <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="selfieweek.html">Selfie Week</a></li>
                     <li><a href="concepting.html">Concepting</a></li>
                     <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="sprintx.html">Sprint X</a></li>
                     <li><a href="aisha.html">Aisha</a></li>
                 </ul>
             </li>
@@ -102,26 +68,7 @@
         <div class="exercise-block">
             <div class="projectHeader"><span>Urban Safari</span>
                 <hr class="larger-hr medium-hr">
-                <!--
-                <div class="urban-safari">
-                    <div class="img-comp-container">
-                        <div class="img-comp-img img-comp-shadow">
-                            <img src="https://i.postimg.cc/t4mMTqHf/img2small.jpg">
-                        </div>
-                        <div class="img-comp-img img-comp-overlay">
-                            <img src="https://i.postimg.cc/JzhFMySZ/img1small.jpg">
-                        </div>
-                    </div>
-                    <div class="img-comp-container">
-                        <div class="img-comp-img2 img-comp-shadow">
-                            <img src="https://i.postimg.cc/t4bcfSNS/img4small.jpg">
-                        </div>
-                        <div class="img-comp-img img-comp-overlay">
-                            <img src="https://i.postimg.cc/9FZSL5Zw/img3small.jpg">
-                        </div>
-                    </div>
-                </div> -->
-
+                
                 <div class="box-hologram-videos">
                     <img class="img-hologram" src="images/urbansafari_bw_before.JPG">
                     <img class="img-hologram" src="images/urbansafari_bw_after.jpg">
@@ -141,7 +88,4 @@
 
     <!-- Button to scroll back to the top -->
     <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
-    <script>
-        initComparisons()
-    </script>
 </body></html>

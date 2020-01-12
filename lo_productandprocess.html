@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
     <title>Product & Process</title>
     <link rel="stylesheet" types="text/css" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     <script>
@@ -35,10 +35,33 @@
         $(document).ready(function() {
             $('.scrollIndicator').delay(2100).fadeIn(400);
         });
+
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                return false;
+            }
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
+                alert('not allowed');
+                return false;
+            } else {
+                return true;
+            }
+        };
     </script>
+
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <nav>
         <div class="logo">
             <h4>Product & Process</h4>
@@ -51,8 +74,10 @@
                     <li><a href="userResearch.html">User Research</a></li>
                     <li><a href="development.html">Development</a></li>
                     <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="selfieweek.html">Selfie Week</a></li>
                     <li><a href="concepting.html">Concepting</a></li>
                     <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="sprintx.html">Sprint X</a></li>
                     <li><a href="aisha.html">Aisha</a></li>
                 </ul>
             </li>
@@ -63,16 +88,16 @@
         <div class="exercise-block">
             <div class="projectHeader"><span>Product & Process</span>
                 <hr class="smaller-hr">
-                <h6>EZ-Dice</h6>
+                <h6 class="interview-header normal-hr">EZ-Dice <a href="https://github.com/JayVnl/Development-S2/tree/master/EZ-Dice"><img class="githubSide" src="images/githubicon.png"></a></h6>
                 <div class="box-dice">
                     <p>
                         My first project of development was a chrome extension called EZ-Dice which is basically a dice roller.<br>
-                        
+
                         The first thing i did before actually programming was watching some tutorials and do some research about how chrome extensions work and how to make one.<br>
                     </p>
                     <div class="box-demographic">
                         <p>After understanding the roots of it i started making my own chrome extension. <br>
-                        I had a general idea about how i should make it and it also went quite easy. I have some experience in javascript and this programm didn't need that much since it basically only needed a random number generator that spits out a number that links to an image of a side of the dice and shows it to the user.</p><br><br>
+                            I had a general idea about how i should make it and it also went quite easy. I have some experience in javascript and this programm didn't need that much since it basically only needed a random number generator that spits out a number that links to an image of a side of the dice and shows it to the user.</p><br><br>
 
                         <img class="img-dev-code" src="images/dev_dice_code.PNG"><br><br>
 
@@ -91,7 +116,9 @@
                     </div>
                 </div>
 
-                <h6>Swiss Toolbox</h6>
+                <hr class="normal-hr larger-hr">
+
+                <h6 class="interview-header normal-hr">Swiss Toolbox <a href="https://github.com/JayVnl/Development-S2/tree/master/SwissToolbox"><img class="githubSide" src="images/githubicon.png"></a></h6>
                 <div>
                     <p>
                         My next project is called Swiss Toolbox, it's another chrome extension that is as it's name says a toolbox. Which basically means it has different types of tools once you open it.<br><br>
@@ -111,7 +138,9 @@
 
                 </div>
 
-                <h6>Failstack Chance</h6>
+                <hr class="normal-hr larger-hr">
+
+                <h6 class="interview-header normal-hr">Failstack Chance <a href="https://github.com/JayVnl/Development-S2/tree/master/FS_Chance"><img class="githubSide" src="images/githubicon.png"></a></h6>
                 <img class="img-failstack-ps" src="images/dev_failstack_ps.png">
                 <img class="img-failstack-web" src="images/dev_failstack_web.png">
                 <p>
@@ -122,9 +151,23 @@
                     The parts where i am currently still working on and optimising is the calculation which will become a long algorithm in javascript using all the variables the user can enter, so what the item type is, the grade of the item, what level the item is and how many failstacks are going to be used.<br>
 
                     After the calculation is done this value will be presented in the form of a percentage in the 3rd box.
-
                 </p>
 
+                <hr class="normal-hr larger-hr">
+
+                <h6 class="interview-header normal-hr">Soundboard <a href="https://github.com/JayVnl/Development-S2/tree/master/Sound%20Kit"><img class="githubSide" src="images/githubicon.png"></a></h6>
+                <img class="img-failstack-ps" src="images/soundkit.PNG">
+                <p>
+                    The inspiration for this project was a challenge that was based around making a drum kit which basically meant, designing a drum kit and creating it in HTML, CSS through images or SVGs and then adding the corresponding sound to each image/SVG that you would hear when clicking on it or by keybindings.
+                    <br>
+                    <br>
+                    Even though this was interesting and i wanted to make it i wanted to make something different so i thought of something else that would play sounds when pressing on it and the first thing that came to mind was a soundboard.
+                    <br>
+                    <br>
+                    I instantly started off designing it through HTML, CSS since i knew i could make everything i wanted by using flex boxes.
+                    <br>
+                    After the design was done i added functionality to it rather easily and even though there is quite a bit of (unevitable) duplicate code in the javascript, i have tried to optimize it by using loops and arrays wherever i thought was possible.
+                </p>
             </div>
         </div>
     </section>

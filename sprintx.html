@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <title>Sprint X</title>
+    <link rel="stylesheet" types="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollToTop').fadeIn();
+                    $('.scrollIndicator').fadeOut();
+                    $('.github').css("right", "9.2vh");
+                    $('.github').css("transition", ".5s");
+                } else {
+                    $('.scrollToTop').fadeOut();
+                    $('.scrollIndicator').fadeIn(2100);
+                    $('.github').css("right", "2vh");
+                    $('.github').css("transition", ".5s");
+                }
+            });
+            $('.scrollToTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000)
+            })
+        });
+        $(document).ready(function() {
+            $('.scrollIndicator').delay(2100).fadeIn(400);
+        });
+
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                return false;
+            }
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
+                alert('not allowed');
+                return false;
+            } else {
+                return true;
+            }
+        };
+    </script>
+
+</head>
+
+<body oncontextmenu="return false">
+    <nav>
+        <div class="logo">
+            <h4>Sprint X</h4>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
+            <li><a class="active" href="#">Subjects</a>
+                <ul>
+                    <li><a href="userResearch.html">User Research</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="selfieweek.html">Selfie Week</a></li>
+                    <li><a href="concepting.html">Concepting</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="sprintx.html">Sprint X</a></li>
+                    <li><a href="aisha.html">Aisha</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section class="bg">
+        <div class="exercise-block">
+            <div class="projectHeader"><span>Sprint X</span>
+                <hr class="normal-hr larger-hr">
+                <p>
+                    For my Sprint X project i am developing an app that let's users share pictures with each other and are able to like or comment on them.
+                    <br>
+                    <br>
+                    The language that i use for this project is Dart and i will be using Flutter which is a UI toolkit developed by google that allows you to programm in one language and then compile it to native code for android and ios devices.
+                    <br>
+                    <br>
+                    I have been interested in developing apps for quite some time and have some experience in this while using android studio and xamarin. This will be the first time i am using Dart and Flutter but i am eager to learn this since i think this will be very useful for later if i want to fully focus my career on developing apps.
+                </p>
+
+                <hr class="normal-hr larger-hr">
+
+                <h6 class="interview-header">Design Sketch</h6>
+                <img class="img-failstack-ps" src="images/sx_sketch.jpg">
+                <p class="smaller-hr">
+                    I started off by designing the look of the app and all the pages it should contain. I have asked my peers to give me feedback on each design and changed the design on some if i found it useful.
+                </p>
+
+                <hr class="normal-hr larger-hr">
+
+                <h6 class="interview-header">Colour Palette</h6>
+                <img class="img-prisma1" src="images/sx_colour_iteration.jpg">
+                <img class="img-prisma1" src="images/sx_colours.png">
+                <p class="smaller-hr">
+                    Once happy with the designs in the previous step i wanted to make a colour palette that i would use throughout the entire app.
+                    <br>
+                    <br>
+                    I wanted to use colours that stick out from each other and looked nice together.
+                    <br>
+                    The first colour palette was my first iteration which was okay but got the feedback that the middle colour looked a bit too much pink so i changed it into a more prominent red.
+                    <br>
+                    <br>
+                    Coincidentally the colour palette of the app is resembling the colours of my portfolio but that's fine because i really like the combination and so did most peers.
+                </p>
+
+                <hr class="normal-hr larger-hr">
+
+                <h6 style="margin-bottom: -6%;" class="interview-header">Name + Logo</h6>
+                <img class="img-prisma1" src="images/sx_logo_first.png">
+                <img class="img-prisma1" src="images/sx_logo_final.png">
+                <p style="margin-top: -10%;" class="smaller-hr">
+                    I didn't have any great idea for a name for my app but i wanted something simple and easy said so i just thought of some random words and YASS was the word i thought sounded best.
+                    <br>
+                    After some time i also created a definition for it which is "<u>Y</u>our <u>A</u>pplication to <u>S</u>hare <u>S</u>tories".
+                    <br>
+                    <br>
+                    Going on, the logo of the app needed to be a font that fitted the background i made for the app, this background containing a lot of diamond shapes was something i wanted to be something repetitive, especially in presentations to get a reaction of "Hey a diamond shape, that reminds me of YASS".
+                    <br>
+                    <br>
+                    The first font i chose is the image on the left which i liked but didn't really fit. I also got the feedback that it looked like<br> Y ASS since the spacing wasn't right.
+                    <br>
+                    The image on the right is my next iteration which fits a lot better and will be the logo that is going to be used.
+                </p>
+
+                <hr class="normal-hr larger-hr">
+
+                <h6 style="margin-bottom: -6%;" class="interview-header">Design</h6>
+                <div style="margin-top: 7%;" class="box-album-covers">
+                    <p>
+                        I have created the entire design in Affinity Designer. I started off by remaking the designs i made in the sketch in the programm after this i added colour to it by using my colour palette.
+                        <br>
+                        I work a lot with designing programms so this didn't take me too long and i think the result is pretty good.
+                    </p>
+                    <div>
+                        <img class="img-designs" src="images/sx_design_splash.png">
+                        <img class="img-designs" src="images/sx_design_username.png">
+                        <img class="img-designs" src="images/sx_design_home.png">
+                        <img class="img-designs" src="images/sx_design_notifications.png">
+                        <img class="img-designs" src="images/sx_design_camera.png">
+                        <img class="img-designs" src="images/sx_design_camera_caption.png">
+                        <img class="img-designs" src="images/sx_design_search.png">
+                        <img class="img-designs" src="images/sx_design_profile.png">
+                        <img class="img-designs" src="images/sx_design_editprofile.png">
+                    </div>
+                </div>
+
+                <hr class="normal-hr larger-hr">
+
+                <h6 class="interview-header">Adobe XD Prototype</h6>
+
+                <div class="box-adobeXD">
+                    <p>
+                        As you can see i have made a prototype with Adobe XD of my app
+                        <br>
+                        while using the designs i made.
+                        <br>
+                        <br>
+                        I think this gif shows quite clearly how the app is going to look
+                        <br>
+                        and work.
+                        <br>
+                        <br>
+                        This is the first time i have used Adobe XD and i think i did a
+                        <br>
+                        pretty okay job.
+                        <br>
+                        <br>
+                        I will definitely use Adobe XD for more projects since it's a really
+                        <br>
+                        easy and solid way to present a clear picture to a client.
+                    </p>
+                    <img class="img-designXD" src="images/sx_adobexd.gif">
+                </div>
+
+                <hr class="normal-hr larger-hr">
+
+                <h6 class="interview-header">Presentation about YASS</h6>
+
+                <div class="sxSlideshow">
+                    <img class="arrow" src="images/arrow_left.png" onclick="previousImage()">
+                    <img class="img-failstack-ps" name="slide" src="images/sx_presentation_1.jpg">
+                    <img class="arrow" src="images/arrow_right.png" onclick="nextImage()">
+                </div>
+                
+                <p class="smaller-hr">
+                    These pages are all made by me to show a kind of presentation about my app.
+                    <br>
+                    I wanted to show the information and features of my app in a visually pleasing way and thought that a presentation was the way to go.
+                    <br>
+                    I also wanted to make a sort of advertisement that could be used for my app which is the last page.
+                </p>
+                
+                <hr class="normal-hr larger-hr">
+
+                <h6 class="interview-header">Reflection</h6>
+                <p>
+                    I think this project will be one of the most interesting and fun ones i am working on so far.
+                    <br>
+                    I am learning a lot experience from everything i have made so far especially developing an app which i can take with me when i am following the specialization Smart Mobile.
+                    <br>
+                    <br>
+                    So far i am still working on building the app and figuring out how everyone works.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button to scroll back to the top -->
+    <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
+    <a href="https://github.com/JayVnl/Sprint-X-YASS" class="github"><img src="images/githubicon.png"></a>
+
+    <script>
+        var i = 0;
+        var path = [];
+
+        path[0] = "images/sx_presentation_1.jpg";
+        path[1] = "images/sx_presentation_2.jpg";
+        path[2] = "images/sx_presentation_3.jpg";
+        path[3] = "images/sx_presentation_4.jpg";
+        path[4] = "images/sx_presentation_5.jpg";
+        path[5] = "images/sx_presentation_6.jpg";
+
+        function nextImage() {
+            if (i < path.length - 1) i++;
+            else i = 0;
+            document.slide.src = path[i];
+        }
+        
+        function previousImage() {
+            if (i > 0) i--;
+            else i = 5;
+            document.slide.src = path[i];
+            
+        }
+    </script>
+</body></html>

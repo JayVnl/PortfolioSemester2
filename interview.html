@@ -2,109 +2,190 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
-  <title>Interview</title>
-  <link rel="stylesheet" types="text/css" href="style.css">
-  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <title>Interview</title>
+    <link rel="stylesheet" types="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-  <script>
-    $(window).on('scroll', function() {
-      if ($(window).scrollTop()) {
-        $('nav').addClass('black');
-      } else {
-        $('nav').removeClass('black');
-      }
-    });
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-          $('.scrollToTop').fadeIn();
-          $('.scrollIndicator').fadeOut();
-        } else {
-          $('.scrollToTop').fadeOut();
-          $('.scrollIndicator').fadeIn(2100);
-        }
-      });
-      $('.scrollToTop').click(function() {
-        $('html,body').animate({
-          scrollTop: 0
-        }, 1000)
-      })
-    });
-    $(document).ready(function() {
-      $('.scrollIndicator').delay(2100).fadeIn(400);
-    });
-  </script>
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollToTop').fadeIn();
+                    $('.scrollIndicator').fadeOut();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                    $('.scrollIndicator').fadeIn(2100);
+                }
+            });
+            $('.scrollToTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000)
+            })
+        });
+        $(document).ready(function() {
+            $('.scrollIndicator').delay(2100).fadeIn(400);
+        });
+
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                return false;
+            }
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
+                alert('not allowed');
+                return false;
+            } else {
+                return true;
+            }
+        };
+    </script>
+
 </head>
 
-<body>
-  <nav>
-    <div class="logo">
-      <h4>Interview</h4>
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
-      <li><a href="#">Subjects</a>
-        <ul>
-          <li><a href="userResearch.html">User Research</a></li>
-          <li><a href="development.html">Development</a></li>
-          <li><a href="prototyping.html">Prototyping</a></li>
-          <li><a href="concepting.html">Concepting</a></li>
-          <li><a href="strategy.html">Strategy</a></li>
-          <li><a href="aisha.html">Aisha</a></li>
-        </ul>
-      </li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-  <section class="bg">
-    <div class="exercise-block">
-      <div class="projectHeader"><span>Interview</span>
-        <hr class="smaller-hr">
-        <div class="box-safari">
-          <p>
-            Interviewer: <span class="interviewAnswer">How old are you?</span><br>
-                Interviewee: <span class="interviewAnswer">I am 20 years old.</span><br><br>
-
-                Interviewer: <span class="interviewAnswer">What level of education did you do?</span><br>
-                Interviewee: <span class="interviewAnswer">I have finished HAVO and am now studying HBO.</span><br><br>
-
-                Interviewer: <span class="interviewAnswer">Which genre of music do you mainly listen to?</span><br>
-                Interviewee: <span class="interviewAnswer">I mainly listen to cloudrap, experimental R&B and emorap.</span><br><br>
-
-                Interviewer: <span class="interviewAnswer">Do you ever attend concerts? if so how often?</span><br>
-                Interviewee: <span class="interviewAnswer">No never.</span><br><br>
-
-                Interviewer: <span class="interviewAnswer">Do you use music streaming services such as spotify or soundcloud, and if so how often?</span><br>
-                Interviewee: <span class="interviewAnswer">I use spotify every day and soundcloud only for specific artists who don't upload to spotify.</span><br><br><br>
-
-                Interviewer: <span class="interviewAnswer">Do you use social media such as facebook / twitter / youtube / snapchat etc, if so how often and why?</span><br><br>
-                Interviewee: <span class="interviewAnswer">Yes, I mainly use instagram and reddit, about an hour and a half a day. I mainly use Instagram for memes but also to follow celebrities and see day to day activities. I use reddit for news and discussions</span><br><br><br><br><br>
-
-                Interviewer: <span class="interviewAnswer">When do you listen to music and does the type of music change during other activities?</span><br>
-                Interviewee: <span class="interviewAnswer">The music that I listen to often stays the same with cooking or training, but when relaxing or a more intimate atmosphere, the music will be a little more chill.</span><br><br><br><br>
-
-                Interviewer: <span class="interviewAnswer">Do you ever visit an artist's website and if so how often and what do you use it for?</span><br>
-                Interviewee: <span class="interviewAnswer">Yes, but only if there is something of exclusive merchandise that appeals to me.</span><br><br><br>
-
-                Interviewer: <span class="interviewAnswer">How do you discover new music and / or artists?</span><br>
-                Interviewee: <span class="interviewAnswer">Suggestions from friends or via youtube or spotify.</span><br><br>
-
-                Interviewer: <span class="interviewAnswer">Do you listen to Dutch-language music? If so, what do you like about it, if not, why not?</span><br>
-                Interviewee: <span class="interviewAnswer">No, actually only English, not many Dutch artists appeal to me.</span><br><br>
-            </div>
-        <hr>
-        <div class="projectSubtitle"><span>Feedback</span>
-            <p>The tone in which I asked questions was good and the interview went smoothly. For some questions, I could have asked a little bit further to obtain more information.</p>
+<body oncontextmenu="return false">
+    <nav>
+        <div class="logo">
+            <h4>Interview</h4>
         </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learningOutcomes.html">Learning Outcomes</a></li>
+            <li><a href="#">Subjects</a>
+                <ul>
+                    <li><a href="userResearch.html">User Research</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="selfieweek.html">Selfie Week</a></li>
+                    <li><a href="concepting.html">Concepting</a></li>
+                    <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="sprintx.html">Sprint X</a></li>
+                    <li><a href="aisha.html">Aisha</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section class="bg">
+        <div class="exercise-block">
+            <div class="projectHeader"><span>Interview</span>
+                <hr class="smaller-hr larger-hr">
+                <h6 class="interview-header">Interview with Simon Peters</h6>
+                <div class="box-safari">
+                    <p>
+                        Gender: Male<br><br>
+                        Interviewer: <span class="interviewAnswer">How old are you?</span><br>
+                        Interviewee: <span class="interviewAnswer">I am 20 years old.</span><br><br>
 
-      </div>
-    </div>
-  </section>
+                        Interviewer: <span class="interviewAnswer">What level of education did you do?</span><br>
+                        Interviewee: <span class="interviewAnswer">I have finished HAVO and am now studying HBO.</span><br><br>
 
-  <!-- Button to scroll back to the top -->
-  <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
+                        Interviewer: <span class="interviewAnswer">Which genre of music do you mainly listen to?</span><br>
+                        Interviewee: <span class="interviewAnswer">I mainly listen to cloudrap, experimental R&B and emorap.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">Do you ever attend concerts? if so how often?</span><br>
+                        Interviewee: <span class="interviewAnswer">No never.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">Do you use music streaming services such as spotify or soundcloud, and if so how often?</span><br>
+                        Interviewee: <span class="interviewAnswer">I use spotify every day and soundcloud only for specific artists who don't upload to spotify.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">Do you use social media such as facebook / twitter / youtube / snapchat etc, if so how often and why?</span><br>
+                        Interviewee: <span class="interviewAnswer">Yes, I mainly use instagram and reddit, about an hour and a half a day. I mainly use Instagram for memes but also to follow celebrities and see day to day activities. I use reddit for news and discussions</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">When do you listen to music and does the type of music change during other activities?</span><br>
+                        Interviewee: <span class="interviewAnswer">The music that I listen to often stays the same with cooking or training, but when relaxing or a more intimate atmosphere, the music will be a little more chill.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">Do you ever visit an artist's website and if so how often and what do you use it for?</span><br>
+                        Interviewee: <span class="interviewAnswer">Yes, but only if there is something of exclusive merchandise that appeals to me.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">How do you discover new music and / or artists?</span><br>
+                        Interviewee: <span class="interviewAnswer">Suggestions from friends or via youtube or spotify.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">Do you listen to Dutch-language music? If so, what do you like about it, if not, why not?</span><br>
+                        Interviewee: <span class="interviewAnswer">No, actually only English, not many Dutch artists appeal to me.</span>
+                </div>
+                <hr class="normal-hr larger-hr">
+                <div class="interview-header"><span>Feedback</span>
+                    <p>The tone in which I asked questions was good and the interview went smoothly. For some questions, I could have asked a little bit further to obtain more information.</p>
+                </div>
+
+                <hr class="larger-hr normal-hr">
+
+                <h6 class="interview-header">Interview with Jessy Appelven</h6>
+                <div class="box-safari">
+                    <p>
+                        Gender: Female<br><br>
+                        Interviewer: <span class="interviewAnswer">How old are you?</span><br>
+                        Interviewee: <span class="interviewAnswer">I am 18 years old.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">What level of education did you do?</span><br>
+                        Interviewee: <span class="interviewAnswer">I am currently studying "Bouwkunde MBO niveau 4".</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">What do you think about the music i just let you listen to? "Aisha, Zeg Mij"</span><br>
+                        Interviewee: <span class="interviewAnswer">It had a nice and chill beat and i liked the melody.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">How would you describe that melody or what kind of feeling does it bring you?</span><br>
+                        Interviewee: <span class="interviewAnswer">The melody sounded really cheerful to me and gave me a happy feeling.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">Where do you see yourself listening to this music?</span><br>
+                        Interviewee: <span class="interviewAnswer">I would probably listen to it while going to school or work and otherwise while i am in a happy mood.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">How do you find new music or artists?</span><br>
+                        Interviewee: <span class="interviewAnswer">Most of the times i get recommendations from friends and otherwise it's just random.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">What do you think about dutch music?</span><br>
+                        Interviewee: <span class="interviewAnswer">I listen to dutch music quite regularly like Maan and Tabitha and don't really mind it being dutch since i like the beat/melody in it and that is what's important to me for liking a song.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">Does an album cover or a videoclip make a difference to you when listening music?</span><br>
+                        Interviewee: <span class="interviewAnswer">Yes, i like to watch videoclips on youtube but it has to fit the music.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">What makes a videoclip fit to the music for you?</span><br>
+                        Interviewee: <span class="interviewAnswer">It has to give you the same emotion or feeling you get when listening the song.</span><br><br>
+
+                        Interviewer: <span class="interviewAnswer">If you were an aspiring artist, how would you go about promoting yourself?</span><br>
+                        Interviewee: <span class="interviewAnswer">I would volunteer for singing competitions, try to perform at as many places as possible and use social media like instagram a lot to show where i am going to perform each time.</span>
+                </div>
+
+                <hr class="larger-hr normal-hr">
+
+                <h6 class="interview-header">Interview with Thom Teunissen</h6>
+                <p>This interview is recorded by me, so go ahead and listen.</p>
+                <audio controls class="interview-audio">
+                    <source src="images/interview_thom.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <hr class="larger-hr normal-hr">
+                <h6 class="interview-header">Reflection</h6>
+                <p>
+                    So what have i learned from the interviews i have taken?<br>
+                    I should try to loosen up the questions a bit more, i am a very strict person that likes when things are as they should be which makes it easy for me to ask the questions that i have written down but i should focus on trying to follow-up a question depending on the answer i get from the interviewee.<br><br>
+
+                    I basically need to receive as much information from a interviewee as i can by constructing well made questions that make it easy for me to come up with a follow-up.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button to scroll back to the top -->
+    <a href="#" class="scrollToTop"><img src="images/button_toTop.png"></a>
 
 </body></html>

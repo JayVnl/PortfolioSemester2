@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
     <title>Media Products</title>
     <link rel="stylesheet" types="text/css" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/grbrDdSd/favicon-96x96.png" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     <script>
@@ -35,10 +35,34 @@
         $(document).ready(function() {
             $('.scrollIndicator').delay(2100).fadeIn(400);
         });
+    
+    $(document).keydown(function (event) {
+    if (event.keyCode == 123) { 
+        return false;
+    }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { 
+        return false;
+    }
+});
+      
+      document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            alert('not allowed');
+            return false;
+        } else {
+            return true;
+        }
+};
+
     </script>
+  
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <nav>
         <div class="logo">
             <h4>Media Products</h4>
@@ -51,8 +75,10 @@
                     <li><a href="userResearch.html">User Research</a></li>
                     <li><a href="development.html">Development</a></li>
                     <li><a href="prototyping.html">Prototyping</a></li>
+                    <li><a href="selfieweek.html">Selfie Week</a></li>
                     <li><a href="concepting.html">Concepting</a></li>
                     <li><a href="strategy.html">Strategy</a></li>
+                    <li><a href="sprintx.html">Sprint X</a></li>
                     <li><a href="aisha.html">Aisha</a></li>
                 </ul>
             </li>
